@@ -97,7 +97,7 @@
 							<li class="icon solid fa-brain">AI/ML, Deep Learning, NLP, LLMs, PyTorch, Langchain, RAG, TensorFlow, Computer Vision</li>
 							<li class="icon solid fa-cogs">Qt, CMake, Visual Studio</li>
 							<li class="icon solid fa-microchip">FPGA, Embedded Systems, Vitis AI</li>
-							<li class="icon solid fa-tools">Git, CI/CD, Agile-Scrum</li>
+							<li class="icon solid fa-tools">Git, CI/CD, Agile-Scrum, Google Test</li>
 							<li class="icon solid fa-terminal">Linux, Windows, Docker, Bash, ROS</li>
 							<li class="icon solid fa-globe">English (C1), German (A2)</li>
 							<li class="icon solid fa-database">OOP, UML, STL, Clean Code Development, , Design Patterns</li>
@@ -124,9 +124,9 @@
 									</header>
 									<div class="content">
 										<ul>
-											<li>Created and optimized custom kernels for SQL query acceleration on Xilinx Vitis AI Engines</li>
-											<li>Rewrote and optimized XDMA embedded driver code in C++ to enhance data transfer efficiency</li>
-											<li>Reworked AxiDMA driver in C++ for Linux, enabling seamless FPGA hardware integration</li>
+											<li>Optimized SQL query acceleration using C++ kernels on Xilinx Vitis AI for FPGA-based systems</li>
+											<li>Refactored embedded Linux driver code (DMA, PCIe), improving reliability of hardware–software communication</li>
+											<li>Performed system bring-up, low-level debugging, and validation on real hardware platforms</li>
 										</ul>
 									</div>
 								</section>
@@ -136,15 +136,15 @@
 									<header>
 										<h3>Software Developer Engineer - Siemens</h3>
 										<p>November 2021 – September 2023 | Bengaluru, India<br>
-										Contributed to TIA Portal development, one of Siemens' flagship industrial automation platforms.</p>
+										Contributed to TIA Portal and HMI panels development, one of Siemens' flagship industrial automation platforms.</p>
 									</header>
 									<div class="content">
 										<ul>
-											<li>Developed core components of the screen editor for TIA Portal using C++, Qt, CMake for Windows</li>
-											<li>Implemented backend logic for dynamic object creation and data flow management</li>
-											<li>Led development and mentored junior team members to maintain project momentum and quality</li>
-											<li>Participated in Agile Scrum methodology with active involvement in sprints and retrospectives</li>
-											<li>Maintained CI/CD pipeline and conducted rigorous code reviews</li>
+											<li>Developed Qt-based UI components (C++17, QML) for HMI Panels used in industrial automation systems</li>
+											<li>Contributed to software architecture and UML design for new UI features</li>
+											<li>Maintained core modules across releases and improved CI/ CD pipelines</li>
+											<li>Conducted code reviews and enforced clean code practices in Agile Scrum teams</li>
+											<li>Mentored junior developers, improving code quality and team productivity</li>
 										</ul>
 									</div>
 								</section>
@@ -158,10 +158,10 @@
 									</header>
 									<div class="content">
 										<ul>
-											<li>Developed features for patient monitoring application (ECG, SpO2, BP) using C++17, QML, Qt</li>
-											<li>Wrote comprehensive unit tests using Google Test framework</li>
-											<li>Investigated and resolved software bugs, supporting overall product stability</li>
-											<li>Participated in code reviews and maintained coding standards</li>
+											<li>Developed Qt/ C++ UI for patient monitoring systems (ECG, SpO₂) in IEC 62304-compliant medical software</li>
+											<li>Increased test coverage using Google Test, reducing defects in safety-critical systems</li>
+											<li>Debugged complex issues in embedded Linux environments</li>
+											<li>Collaborated with cross-functional teams to deliver robust, production-ready features</li>
 										</ul>
 									</div>
 								</section>
@@ -176,7 +176,7 @@
 						</header>
 						<div class="content">
 							<p>
-								Projects spanning <strong>applied machine learning, software engineering and performance optimization</strong>, 
+								Projects spanning <strong>software engineering, performance optimization and applied machine learning</strong>, 
 								with a practical approach to solving real-world problems.
 							</p>
 							<!-- Section -->
@@ -193,6 +193,50 @@
 									<div class="image-wrapper">
 										<img src="images/BraTS.jpg" alt="BrainTumorSegmentation"/>
 										<a href="https://github.com/nandhishtr/BrainTumorSegmentation" 
+											target="_blank" 
+											class="view-project-btn">View Project</a>
+										</div>
+									</div>
+								</section>
+
+								<!-- Section -->
+								<section>
+									<header>
+										<h3>NVM-Optimized B-epsilon-tree</h3>
+										<p><strong>Technologies:</strong> C++<br>
+										High-performance data structures for non-volatile memory systems.</p>
+									</header>
+									<div class="content">
+										<p>Implemented an NVM-optimized Bϵ-tree to improve write performance and data indexing by 
+											leveraging non-volatile memory. This design introduces buffers at internal nodes and 
+											supports efficient in-place updates, reducing the need for frequent rebalancing 
+											while optimizing both write and read operations for high-performance storage systems.</p>
+										<!-- Image wrapper with overlay -->
+										<div class="image-wrapper">
+										<img src="images/Betree.png" alt="NVM Optimized B-epsilon-tree"/>
+										<a href="https://github.com/nandhishtr/BepsilonTree" 
+											target="_blank" 
+											class="view-project-btn">View Project</a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Three-Player Chess</h3>
+										<p><strong>Technologies:</strong> Java, HTML, CSS<br>
+										Interactive multiplayer game with robust client-server architecture.</p>
+									</header>
+									<div class="content">
+										<p>Designed an interactive multiplayer chess game web app with Client-Server architecture, 
+											using Java and Spring Boot, implemented with clean coding principles and end-to-end 
+											CI/CD pipelines. Delivered a rock-solid, battle-tested application with extensive unit 
+											test coverage, enhancing strategic gameplay for a broader audience.</p>
+										<!-- Image wrapper with overlay -->
+										<div class="image-wrapper">
+										<img src="images/chess.JPG" alt="ThreePlayerChess"/>
+										<a href="https://github.com/nandhishtr/ThreePlayerChess" 
 											target="_blank" 
 											class="view-project-btn">View Project</a>
 										</div>
@@ -223,96 +267,6 @@
 								</div>										
 							</section>
 
-							<!-- Section -->
-							<section>
-								<header>
-									<h3>Customer Churn Prediction</h3>
-									<p>
-									<strong>Technologies:</strong> Python, Scikit-learn, Pandas, Jupyter Notebook<br>
-									Deep predictive model to identify and mitigate customer attrition.
-									</p>
-								</header>
-								<div class="content">
-									<p> Developed a machine learning pipeline using Python and Scikit-learn to predict customer 
-										churn for a telecommunications company. Implemented a data preparation and cleaning 
-										workflow using Pandas to ensure data quality and relevance, providing actionable 
-										insights for retention strategies.</p>
-									<!-- Image wrapper with overlay -->
-									<div class="image-wrapper">
-									<img src="images/CustomerChurn.png" alt="Customer Churn Prediction"/>
-									<a href="https://github.com/nandhishtr/CustomerChurnPrediction" 
-										target="_blank" 
-										class="view-project-btn">View Project</a>
-									</div>
-								</div>
-							</section>							
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Three-Player Chess</h3>
-										<p><strong>Technologies:</strong> Java, HTML, CSS<br>
-										Interactive multiplayer game with robust client-server architecture.</p>
-									</header>
-									<div class="content">
-										<p>Designed an interactive multiplayer chess game web app with Client-Server architecture, 
-											using Java and Spring Boot, implemented with clean coding principles and end-to-end 
-											CI/CD pipelines. Delivered a rock-solid, battle-tested application with extensive unit 
-											test coverage, enhancing strategic gameplay for a broader audience.</p>
-										<!-- Image wrapper with overlay -->
-										<div class="image-wrapper">
-										<img src="images/chess.JPG" alt="ThreePlayerChess"/>
-										<a href="https://github.com/nandhishtr/ThreePlayerChess" 
-											target="_blank" 
-											class="view-project-btn">View Project</a>
-										</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Flat Earth Believer Bot</h3>
-										<p><strong>Technologies:</strong> Python, Docker, Prompt Engineering<br>
-										Interactive Chatbot Teaches Critical Thinking Through Flat Earth Debates</p>
-									</header>
-									<div class="content">
-										<p>Developed an interactive chatbot to engage users in Flat Earth theory discussions while 
-											teaching critical thinking and argumentation strategies. Using advanced prompt 
-											engineering, sentiment analysis, and personas, the chatbot provides tailored 
-											responses, along with hints and quizzes to enhance learning. User feedback showed 
-											improved engagement, clarity, and educational impact in the latest version.</p>
-										<!-- Image wrapper with overlay -->
-										<div class="image-wrapper">
-										<img src="images/flatEarth.jpg" alt="NVM Optimized B-epsilon-tree"/>
-										<a href="https://github.com/nandhishtr/ChatbotChallenge" 
-											target="_blank" 
-											class="view-project-btn">View Project</a>
-										</div>
-									</div>
-								</section>
-
-								<!-- Section -->
-								<section>
-									<header>
-										<h3>NVM-Optimized B-epsilon-tree</h3>
-										<p><strong>Technologies:</strong> C++<br>
-										High-performance data structures for non-volatile memory systems.</p>
-									</header>
-									<div class="content">
-										<p>Implemented an NVM-optimized Bϵ-tree to improve write performance and data indexing by 
-											leveraging non-volatile memory. This design introduces buffers at internal nodes and 
-											supports efficient in-place updates, reducing the need for frequent rebalancing 
-											while optimizing both write and read operations for high-performance storage systems.</p>
-										<!-- Image wrapper with overlay -->
-										<div class="image-wrapper">
-										<img src="images/Betree.png" alt="NVM Optimized B-epsilon-tree"/>
-										<a href="https://github.com/nandhishtr/BepsilonTree" 
-											target="_blank" 
-											class="view-project-btn">View Project</a>
-										</div>
-									</div>
-								</section>
 						</div>
 					</section>
 
